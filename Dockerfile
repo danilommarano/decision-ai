@@ -11,9 +11,6 @@ COPY src/ src/
 # Instalar dependências
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Gerar o modelo novamente (caso não esteja incluso)
-RUN python src/model.py
-
 # Expor porta da API
 EXPOSE 8000
 
